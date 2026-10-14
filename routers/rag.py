@@ -33,7 +33,7 @@ splitter = RecursiveCharacterTextSplitter(
 )
 
 embeddings = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001")
-model = ChatOpenRouter(model_name="apodex/apodex-1.1-mini:free")
+model = ChatOpenRouter(model_name="nvidia/nemotron-3.5-lightning:free")
 
 class State(TypedDict):
     messages: Annotated[List[BaseMessage], add_messages]
